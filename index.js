@@ -95,3 +95,13 @@ console.log("9: Start with 'at'");
  console.log(regex.test(str2))//true
  console.log(regex.test(str3))//false
 }
+
+console.log("10: Get matched substring (case sensitive")
+{
+  const str = "I am javascript developer";
+  const str2 = "I am JavaScripT developer";
+  const regex =/javascript/
+  console.log(str.match(regex))//["javascript"]
+  console.log(str2.match(regex))//null
+}
+
