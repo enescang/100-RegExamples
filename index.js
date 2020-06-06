@@ -105,3 +105,11 @@ console.log("10: Get matched substring (case sensitive")
   console.log(str2.match(regex))//null
 }
 
+console.log("11: Get matched substring (case insensitive")
+{
+  const str = "I am javascript developer";
+  const str2 = "I am JavaScripT developer";
+  const regex =/javascript/i
+  console.log(str.match(regex))//["javascript"]
+  console.log(str2.match(regex))//["JavaScripT"]
+}
