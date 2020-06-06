@@ -84,3 +84,14 @@ console.log("8: Use or (c or x allowed)");
   console.log(regex.test(str2))//true
   console.log(regex.test(str3))//false
 }
+
+console.log("9: Start with 'at'");
+{
+ const str = "ate";
+ const str2 = "ata"
+ const str3 = "ala"
+ const regex = /at./
+ console.log(regex.test(str))//true
+ console.log(regex.test(str2))//true
+ console.log(regex.test(str3))//false
+}
